@@ -1,0 +1,38 @@
+/* Aula inicial :D */
+Body {
+    background-image: url("https://i.pinimg.com/originals/50/5c/86/505c86078071cfa05794264907521db9.jpg");
+    background-size: auto 100vh;
+  }
+  
+  h1{
+    color:white;
+  }
+  
+  h2{
+    color:white;
+  }
+  
+  .menu{
+   background-color: white;
+  }
+  
+  a{
+    color: black;
+    text-decoration: none;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+  
+  .menu li{
+    list-style: none;
+  }
+  
+  .menu ul{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  Body ul{
+    color: white;
+  }
