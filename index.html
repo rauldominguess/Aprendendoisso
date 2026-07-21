@@ -1,24 +1,213 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Raul Domingues</title>
-    <link rel="stylesheet" href="CSS\estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raul Domingues — Analista de Dados</title>
+  <meta name="description" content="Portfólio de Raul Antonio Carniel Domingues, Analista de Dados Sênior — do chão de fábrica à sala de diretoria via dados.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <header>
-        <nav class="menu">
-          <ul>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Portfólio</a></li>
-            <li><a href="#">Contato</a></li>
-          </ul>
-        </nav>
-        <h1 class="site-title">Raul Antonio Carniel Domingues</h1>
-        <h2 class="site-subtitle">Not a web developer</h2>
-        <ul>
-          <li>aqui então eu posso colocar o texto que eu quiser???????</li>
+
+  <header class="site-header">
+    <nav class="menu" aria-label="Navegação principal">
+      <span class="logo">R.D.</span>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navList">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="navList">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#trajetoria">Trajetória</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="topo">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Curitiba, PR — Dados &amp; Seguros</p>
+          <h1 class="site-title">Raul Antonio<br>Carniel Domingues</h1>
+          <h2 class="site-subtitle">Analista de Dados Sênior</h2>
+          <p class="hero-lede">Do chão de fábrica à sala de diretoria, via dados. Hoje traduzo dados em decisão na
+            <strong>SulAmérica</strong> — depois de passar por indústria, delivery e banco, sempre com a mesma
+            pergunta: o que esse número está tentando me dizer?</p>
+          <div class="hero-actions">
+            <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+            <a href="#contato" class="btn btn-ghost">Contato</a>
+          </div>
+        </div>
+        <div class="hero-chart" aria-hidden="true">
+          <svg viewBox="0 0 420 360" class="spark" role="img">
+            <line x1="40" y1="40" x2="40" y2="300" class="axis"></line>
+            <line x1="40" y1="300" x2="400" y2="300" class="axis"></line>
+            <path id="sparkPath" class="spark-path"
+              d="M 40 260 L 140 220 L 240 150 L 340 70"></path>
+            <g class="spark-points">
+              <circle cx="40" cy="260" r="5" class="pt pt-1"></circle>
+              <circle cx="140" cy="220" r="5" class="pt pt-2"></circle>
+              <circle cx="240" cy="150" r="5" class="pt pt-3"></circle>
+              <circle cx="340" cy="70" r="5" class="pt pt-4"></circle>
+            </g>
+            <g class="spark-labels">
+              <text x="40" y="285" class="lbl">BRF</text>
+              <text x="140" y="245" class="lbl">iFood</text>
+              <text x="240" y="175" class="lbl">Paraná Banco</text>
+              <text x="340" y="95" class="lbl">SulAmérica</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section" id="sobre">
+      <div class="section-head">
+        <p class="eyebrow">Sobre</p>
+        <h3>Análise de dados como fio condutor</h3>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Minha trajetória não é uma reinvenção de carreira — é uma evolução analítica. Passei pela engenharia
+            na indústria de alimentos, pela análise de negócios em uma das maiores plataformas de delivery do país,
+            pela inteligência de dados em um banco, e hoje atuo como Analista de Dados Sênior na SulAmérica, parte
+            da Rede D'Or.</p>
+          <p>Em cada setor, o produto muda — frango, entrega, crédito, saúde — mas a pergunta que eu faço é sempre a
+            mesma: o que os dados estão dizendo, e como transformo isso em algo que alguém do outro lado da mesa
+            consiga decidir com confiança.</p>
+        </div>
+        <dl class="fact-sheet">
+          <div class="fact-row">
+            <dt>Cargo</dt>
+            <dd>Analista de Dados Sênior</dd>
+          </div>
+          <div class="fact-row">
+            <dt>Empresa</dt>
+            <dd>SulAmérica (Grupo Rede D'Or)</dd>
+          </div>
+          <div class="fact-row">
+            <dt>Local</dt>
+            <dd>Curitiba, PR</dd>
+          </div>
+          <div class="fact-row">
+            <dt>Setores</dt>
+            <dd>Indústria · Delivery · Banco · Seguros</dd>
+          </div>
+          <div class="fact-row fact-row-quote">
+            <dt>Assinatura</dt>
+            <dd>"Do chão de fábrica à sala de diretoria, via dados."</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- TRAJETÓRIA -->
+    <section class="section section-alt" id="trajetoria">
+      <div class="section-head">
+        <p class="eyebrow">Trajetória</p>
+        <h3>Uma série temporal de contextos diferentes</h3>
+      </div>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <span class="timeline-year">BRF</span>
+          <div class="timeline-body">
+            <h4>Engenharia</h4>
+            <p>Início no chão de fábrica, próximo do processo produtivo — onde a leitura de dados operacionais
+              começou a virar hábito antes de virar profissão.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-year">iFood</span>
+          <div class="timeline-body">
+            <h4>Análise de Negócios / Dados</h4>
+            <p>Troca da linha de produção pela escala de uma plataforma de delivery, aplicando análise de dados
+              diretamente sobre decisões de negócio.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-year">Paraná Banco</span>
+          <div class="timeline-body">
+            <h4>BI &amp; Dados</h4>
+            <p>Inteligência de dados no setor financeiro, incluindo um projeto de coleta de dados públicos que
+              aparece em detalhe na seção de projetos.</p>
+          </div>
+        </li>
+        <li class="timeline-item timeline-current">
+          <span class="timeline-year">SulAmérica</span>
+          <div class="timeline-body">
+            <h4>Analista de Dados Sênior</h4>
+            <p>Atuação atual, dentro do Grupo Rede D'Or, aplicando toda a bagagem anterior à análise de dados no
+              setor de seguros e saúde.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="section" id="projetos">
+      <div class="section-head">
+        <p class="eyebrow">Projetos</p>
+        <h3>Do dado bruto à decisão</h3>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card project-card-featured">
+          <p class="project-tag">Paraná Banco</p>
+          <h4>Coleta de dados no Portal da Transparência</h4>
+          <p class="project-desc">Projeto de web scraping para levantamento de dados de clientes diretamente no
+            Portal da Transparência do governo federal, sem custo de ferramentas externas. Os resultados foram
+            apresentados a stakeholders não técnicos em uma apresentação executiva.</p>
+          <div class="project-stats">
+            <div class="stat">
+              <span class="stat-num">~10.000</span>
+              <span class="stat-label">CPFs consultados</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">~85%</span>
+              <span class="stat-label">taxa de sucesso</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">R$0</span>
+              <span class="stat-label">custo externo</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <p class="project-tag">Iniciativa pessoal</p>
+          <h4>Narrativa de carreira &amp; posicionamento</h4>
+          <p class="project-desc">Reconstrução do posicionamento profissional na transição para a SulAmérica:
+            reescrita de experiências com viés analítico e de negócio, seção "Sobre" e roteiro estruturado para
+            entrevistas.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section section-contact" id="contato">
+      <div class="section-head">
+        <p class="eyebrow">Contato</p>
+        <h3>Vamos conversar sobre dados</h3>
+      </div>
+      <div class="contact-box">
+        <p>Aberto a conversas sobre dados, análise e os bastidores de setores diferentes.</p>
+        <ul class="contact-links">
+          <li><a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a></li>
+          <li><a href="https://www.linkedin.com/in/seu-usuario" target="_blank" rel="noopener">LinkedIn</a></li>
         </ul>
-      </header>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Raul Antonio Carniel Domingues — Curitiba, PR</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
